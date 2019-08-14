@@ -10,7 +10,19 @@ output: 21
 
 //21 = 6 + 5 + 4 + 3 + 2 + 1
 ```
+```swift
+func recursiveSum(number: Int) -> Int {
+    if number == 1 {
+        print(number)
+        return (number)
+    }
+//Recursive function means that in the func itself, you call it.
+    print(number)
+    return number + recursiveSum(number: number-1)
+}
 
+print("Output: \(recursiveSum(number: 6))")
+```
 
 - ### Multiply array
 
